@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    height: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin-top: 40px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+main {
+    max-width: 1440px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+h1{
+    text-align: center;
+    font-weight: 200;
+}    
+span {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.prg {
+    max-width: calc(1440px/3);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 110px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+    color: hsl(229, 6%, 66%);
+    margin-bottom: 25px;
+}
+
+.boxs {
+    margin-top: 70px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    background-color: #eee;
+    position: absolute;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 20px 25px rgba(0,0,0,0.19), 0 3px 6px rgba(0,0,0,0.23);
+    background-color: white;
+}
+
+.box h4 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: -10px;
+}
+
+.box p {
+    font-size: 14px;
+    color: hsl(229, 6%, 66%);
+    padding-top: 10px;
+    font-weight: 200;
+}
+
+img {
+   width: 40px;
+   height: 40px;
+   position: absolute;
+   top: 60%;
+   right: 5%;
+    
+}
+
+.box1 {
+    margin-top: 120px; 
+    margin-left: 60px;
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.box2 {
+    left: 36%;
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.box3 {
+    margin-top: 120px;
+    left: 66%;
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.box4 {
+    left: 36%;
+    margin-top: 220px;
+    margin-bottom: 50px;
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+
+@media (max-width:767px) {
+    body {
+        height: 140vh;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+    .prg {
+        margin-top: 75px;
+        padding-bottom: 20px;
+    }
+    .boxs {
+        margin-top: 70px;
+        flex-direction: column;
+        position: none;
+        
+    }
+    .box {
+        top: 0;
+        left: 20px;
+        right: 0;
+        bottom: 0;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .box1 {
+        top: -100px;
+        left: auto;
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .box2 {
+        top: 245px;
+        left: auto;
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .box3 {
+        top: 580px;
+        left: auto;
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .box4 {
+        top: 250px;
+        left: auto;
+        padding-bottom: 10px;
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
